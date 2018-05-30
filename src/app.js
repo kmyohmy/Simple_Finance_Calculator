@@ -14,19 +14,19 @@ import { Provider } from 'react-redux';
 
 const store = configureStore();
 
-store.subscribe( () => {
-const state = store.getState();
-const visbleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visbleExpenses);
-}
+// store.subscribe( () => {
+// const state = store.getState();
+// const visbleExpenses = getVisibleExpenses(state.expenses, state.filters);
+// console.log(visbleExpenses);
+// }
+// 
+// )
 
-)
 
-
-// store.dispatch()
-store.dispatch(addExpense({description:'Gas bill' , amount: 500 }));
-store.dispatch(addExpense({description:'Water bill', amount:200, createdAt: 1000}));
-store.dispatch(addExpense({description:'Rent', amount:109500}));
+// // store.dispatch()
+// store.dispatch(addExpense({description:'Gas bill' , amount: 500 }));
+// store.dispatch(addExpense({description:'Water bill', amount:200, createdAt: 1000}));
+// store.dispatch(addExpense({description:'Rent', amount:109500}));
 
 
 const jsx =  (
